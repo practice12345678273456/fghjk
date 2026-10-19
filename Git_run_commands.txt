@@ -1,0 +1,59 @@
+cd "D:\path\to\your\project"
+git init
+git status
+git add .
+git status
+git commit -m "Initial commit"
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git branch -M main
+git push -u origin main
+
+
+1) git init creates a invisible .git file which intializes empty.
+
+2) and then we sue git status to check what are the files which are present that are not added to .git it means
+that git stores the thing and then when we commit it sends it to github.
+
+3) git add . adds all the changed files fomr the presetn dictionary 
+
+4) to actually commit and make added to .git we use this commit with a msg
+
+5) then we need to make a conenction from our local to our github repo so we use this with a nickname -> Origin 
+here origin refferences to the githu repo.
+
+6) once connection is made we need to make a branch and we can keep any Name.
+
+7) Now we directly push the this to the rpo using the refference name and the corresponding branch.
+
+8) Next if we update any file or add new file then alreadya s the conneciton is established just we need to check
+the status 
+and then use add 
+and then commit 
+and then direct push.
+
+9) we can add like this also 
+git add file1 file 2 
+
+
+
+
+
+After adding a new fie to update
+
+git status
+git add .
+git commit -m "Add README" or any comment based on the file 
+git push
+
+
+-m => messages
+-v => verbose
+-u => upstream to connect to the github
+-M => when we create a branch 
+. => reffers to the present directory files 
+
+origin -> nickname or reference to the repo and main is the branch 
+add just saves the file but to do the real changes we need to use commit, so after every add to conform the 
+changes we need to use commit with a msg.
+
+To clone -> git clone "repository"
